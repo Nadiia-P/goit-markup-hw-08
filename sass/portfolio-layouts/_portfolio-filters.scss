@@ -1,0 +1,28 @@
+.filters {
+  @include flex();
+  gap: 8px;
+  margin-bottom: 50px;
+
+  &__button {
+    font-weight: var(--fw-filter-button);
+    background-color: var(--bg-clr-grey);
+    color: var(--txt-clr-title);
+    padding-inline: 22px;
+    height: 38px;
+    min-width: fit-content;
+    transition: background-color var(--trans-func), color var(--trans-func),
+      box-shadow var(--trans-func);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--accent-clr-blue);
+    color: var(--txt-clr-white);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+
+  &__button:active {
+    box-shadow: none;
+  }
+}

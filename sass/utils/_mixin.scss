@@ -1,0 +1,12 @@
+@mixin сentering-xy($position: absolute) {
+  position: $position;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flex($horizontally: center, $vertically: center) {
+  display: flex;
+  justify-content: $horizontally;
+  align-items: $vertically;
+}

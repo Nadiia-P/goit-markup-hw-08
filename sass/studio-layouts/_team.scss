@@ -1,0 +1,27 @@
+.team {
+  display: flex;
+  column-gap: 30px;
+
+  &__card {
+    background-color: var(--clr-white);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  &__member {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  &__name {
+    font-size: var(--fs-secondary);
+    margin-bottom: 10px;
+  }
+
+  &__job {
+    font-size: var(--fs-secondary);
+    margin-bottom: 16px;
+  }
+}

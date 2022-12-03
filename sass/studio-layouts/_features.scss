@@ -1,0 +1,26 @@
+.features {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    max-width: calc((100% - 90px) / 4);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    line-height: 1.71;
+  }
+
+  &__icon-wraper {
+    background-color: var(--bg-clr-grey);
+    border-radius: 4px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}

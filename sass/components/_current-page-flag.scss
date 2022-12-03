@@ -1,0 +1,14 @@
+.current {
+  color: var(--accent-clr-blue);
+
+  &::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 100vh;
+    background-color: var(--accent-clr-blue);
+    position: relative;
+    top: 47px;
+  }
+}

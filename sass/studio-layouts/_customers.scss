@@ -1,0 +1,22 @@
+.customers {
+  display: flex;
+  gap: 30px;
+
+  &__link {
+    display: block;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid var(--icon-clr-grey);
+    border-radius: 4px;
+    min-width: 170px;
+    text-align: center;
+    fill: var(--icon-clr-grey);
+    transition: fill var(--trans-func), border var(--trans-func);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border-color: var(--accent-clr-blue);
+    fill: var(--accent-clr-blue);
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-clr);
+}
+
+.header-nav {
+  margin-left: 93px;
+  @include flex(center, baseline);
+  gap: 50px;
+
+  &__link {
+    color: var(--txt-clr-title);
+    letter-spacing: 0.02em;
+    font-weight: var(--fw-medium);
+    transition: color var(--trans-func);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-clr-blue);
+  }
+}
+
+.header-contacts {
+  @include flex();
+  gap: 50px;
+  margin-left: auto;
+
+  &__link {
+    color: var(--txt-clr-main);
+    font-weight: var(--fw-medium);
+    @include flex();
+    gap: 10px;
+    transition: color var(--trans-func);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-clr-blue);
+  }
+
+  &__icon {
+    fill: currentColor;
+    transition: fill var(--trans-func);
+  }
+}

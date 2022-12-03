@@ -1,0 +1,24 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-img.jpg');
+  }
+
+  &--features {
+    padding-bottom: 0;
+  }
+
+  &--team {
+    background-color: var(--bg-clr-grey);
+  }
+}

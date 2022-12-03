@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-main), sans-serif;
+  font-size: var(--fs-main);
+  color: var(--txt-clr-main);
+  background-color: var(--clr-white);
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-rendering: optimizeSpeed;
+}

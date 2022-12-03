@@ -1,0 +1,39 @@
+.modal {
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  border-radius: 4px;
+  @include сentering-xy();
+
+  background-color: var(--clr-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: opacity var(--trans-func);
+
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__close-icon {
+    display: block;
+    margin: auto;
+    fill: #000;
+    width: 12px;
+    height: 12px;
+
+    transition: fill var(--trans-func);
+  }
+
+  &__close-button:hover &__close-icon,
+  &__close-button:focus &__close-icon {
+    fill: var(--accent-clr-blue);
+  }
+}

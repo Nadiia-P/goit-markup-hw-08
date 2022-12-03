@@ -1,0 +1,27 @@
+.social-media {
+  @include flex();
+  gap: 10px;
+  margin: 0 auto;
+
+  &__link {
+    @include flex();
+    width: 44px;
+    height: 44px;
+    background-color: var(--clr-white);
+    border-radius: 50%;
+    fill: var(--icon-clr-grey);
+    transition: fill var(--trans-func), background-color var(--trans-func);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-clr-blue);
+    fill: var(--clr-white);
+    outline: none;
+  }
+
+  &__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--clr-white);
+  }
+}

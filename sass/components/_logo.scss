@@ -1,0 +1,18 @@
+.logo {
+  display: block;
+  font-family: var(--ff-logo), sans-serif;
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-title);
+
+  &__accent {
+    color: var(--accent-clr-blue);
+  }
+
+  &--header {
+    color: var(--txt-clr-title);
+  }
+
+  &--footer {
+    color: var(--txt-clr-white);
+  }
+}

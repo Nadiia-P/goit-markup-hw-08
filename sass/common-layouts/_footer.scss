@@ -1,0 +1,75 @@
+.footer {
+  background-color: var(--bg-clr-black);
+  padding: 60px 0;
+
+  &-contacts {
+    margin-top: 20px;
+  }
+
+  &-contacts__item {
+    margin-bottom: 9px;
+  }
+
+  &-contacts__item--last {
+    margin-bottom: 0px;
+  }
+
+  &-contacts__link {
+    line-height: 1.5;
+    display: block;
+    color: var(--txt-clr-main);
+    transition: color var(--trans-func);
+  }
+
+  &-contacts__link--address {
+    color: var(--txt-clr-white);
+  }
+
+  &-contacts__link:hover,
+  &-contacts__link:focus {
+    color: var(--accent-clr-blue);
+  }
+
+  /* FOOTER.JOIN US  */
+  /*******************/
+
+  &-title {
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--txt-clr-white);
+    font-weight: var(--fw-title);
+    margin-bottom: 20px;
+  }
+
+  /* FOOTER.FORM  */
+  /****************/
+
+  &__form {
+    @include flex();
+    gap: 12px;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding-inline: 16px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: unset;
+    color: var(--txt-clr-white);
+    transition: border var(--trans-func);
+  }
+
+  &__input:focus {
+    border-color: var(--accent-clr-blue);
+  }
+
+  &__input:-webkit-autofill,
+  &__input:-webkit-autofill:hover,
+  &__input:-webkit-autofill:focus,
+  &__input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--bg-clr-black) inset !important;
+    -webkit-text-fill-color: var(--txt-clr-white);
+  }
+}

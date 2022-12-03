@@ -1,0 +1,28 @@
+:root {
+  --clr-white: #fff;
+  --bg-clr-black: #2f303a;
+  --bg-clr-grey: #f5f4fa;
+  --txt-clr-main: #757575;
+  --txt-clr-title: #212121;
+  --txt-clr-white: #fff;
+  --accent-clr-blue: #2196f3;
+  --border-clr: #ececec;
+  --icon-clr-grey: #afb1b8;
+
+  --ff-main: 'Roboto';
+  --ff-logo: 'Raleway';
+  --fs-main: 14px;
+  --fs-secondary: 16px;
+  --fs-project-title: 18px;
+  --fs-logo: 26px;
+  --fs-header: 36px;
+  --fs-hero: 44px;
+  --fw-main: 400;
+  --fw-medium: 500;
+  --fw-filter-button: 500;
+  --fw-title: 700;
+  --fw-button: 700;
+  --fw-hero: 900;
+
+  --trans-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
