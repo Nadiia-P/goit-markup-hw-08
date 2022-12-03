@@ -1,46 +1,92 @@
 .header {
-  padding: 24px 0;
-  border-bottom: 1px solid var(--border-clr);
+  @media screen and (min-width: 768px) {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-clr);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 21px 0;
+    border-bottom: 1px solid var(--border-clr);
+  }
 }
 
 .header-nav {
-  margin-left: 93px;
-  @include flex(center, baseline);
-  gap: 50px;
+  // margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    @include flex(center, baseline);
+    gap: 50px;
 
-  &__link {
-    color: var(--txt-clr-title);
-    letter-spacing: 0.02em;
-    font-weight: var(--fw-medium);
-    transition: color var(--trans-func);
-  }
+    &__link {
+      color: var(--txt-clr-title);
+      letter-spacing: 0.02em;
+      font-weight: var(--fw-medium);
+      transition: color var(--trans-func);
+    }
 
-  &__link:hover,
-  &__link:focus {
-    color: var(--accent-clr-blue);
+    &__link:hover,
+    &__link:focus {
+      color: var(--accent-clr-blue);
+    }
   }
 }
 
 .header-contacts {
-  @include flex();
-  gap: 50px;
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: block;
 
-  &__link {
-    color: var(--txt-clr-main);
-    font-weight: var(--fw-medium);
+    &__link {
+      color: var(--txt-clr-main);
+      font-weight: var(--fw-medium);
+      @include flex(start, center);
+      gap: 10px;
+      transition: color var(--trans-func);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--accent-clr-blue);
+    }
+
+    &__icon {
+      fill: currentColor;
+      transition: fill var(--trans-func);
+    }
+  }
+  @media screen and (min-width: 1200px) {
     @include flex();
-    gap: 10px;
-    transition: color var(--trans-func);
-  }
+    gap: 50px;
+    margin-left: auto;
 
-  &__link:hover,
-  &__link:focus {
-    color: var(--accent-clr-blue);
+    &__link {
+      color: var(--txt-clr-main);
+      font-weight: var(--fw-medium);
+      @include flex();
+      gap: 10px;
+      transition: color var(--trans-func);
+    }
   }
+}
 
-  &__icon {
-    fill: currentColor;
-    transition: fill var(--trans-func);
+.mobile-menu {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex: 1;
+    margin-left: 87px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.mobile-menu__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-social-media {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

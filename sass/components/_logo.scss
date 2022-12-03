@@ -1,7 +1,7 @@
 .logo {
   display: block;
   font-family: var(--ff-logo), sans-serif;
-  font-size: var(--fs-logo);
+  font-size: var(--fs-logo-main);
   font-weight: var(--fw-title);
 
   &__accent {
@@ -14,5 +14,9 @@
 
   &--footer {
     color: var(--txt-clr-white);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: var(--fs-logo-pc);
   }
 }

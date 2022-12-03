@@ -1,8 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <!-- <link
@@ -18,62 +18,74 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
-
     <!--  HEADER -->
 
     <header class="header">
       <div class="container container--header">
-        <a href="./index.html" class="logo logo--header"><span class="logo__accent">Web</span>Studio</a>
-        <nav>
-          <ul class="header-nav">
+        <a href="./index.html" class="logo logo--header"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+        <div class="mobile-menu">
+          <nav class="header-nav">
+            <ul class="header-nav">
+              <li>
+                <a class="header-nav__link current" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="header-nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li>
+                <a class="header-nav__link" href="./">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contacts">
             <li>
-              <a class="header-nav__link current" href="./index.html">Студія</a>
+              <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
             <li>
-              <a class="header-nav__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li>
-              <a class="header-nav__link" href="./">Контакти</a>
+              <a class="header-contacts__link" href="tel:+380961111111">
+                <svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +380 96 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li>
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"> 
-                </use>
-                </svg>
-                info@devstudio.com</a>
-          </li>
-          <li>
-              <a class="header-contacts__link" href="tel:+380961111111">
-            <svg class="header-contacts__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-phone">
-              </use>
-            </svg>
-          +380 96 111 11 11</a>
-          </li>
-        </ul>
+          <ul class="header-social-media">
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>linkedin</li>
+          </ul>
+          <button class="mobile-menu__button">
+            <div class="mobile-menu__bar"></div>
+          </button>
+        </div>
       </div>
     </header>
 
     <!-- STUDIO MAIN -->
-    <main>
+    <!-- <main> -->
 
-      <!-- STUDIO MAIN.HERO -->
-      <section class="section section--hero">
+    <!-- STUDIO MAIN.HERO -->
+    <!-- <section class="section section--hero">
         <div class="container">
           <h1 class="hero__title">ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
-      <!-- STUDIO MAIN.FEATURES -->
-      <section class="section section--features">
+      </section> -->
+    <!-- STUDIO MAIN.FEATURES -->
+    <!-- <section class="section section--features">
         <div class="container"><h2 class="visually-hidden">наші переваги</h2>
           <ul class="features">
             <li class="features__item">
@@ -125,11 +137,11 @@
               </p>
             </li>
           </ul>
-        </section>
+        </section> -->
 
-<!-- STUDIO MAIN.SERVICES -->
+    <!-- STUDIO MAIN.SERVICES -->
 
-        <section class="section">
+    <!-- <section class="section">
           <div class="container"> <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="services">
               <li class="services__item">
@@ -146,11 +158,11 @@
               </li>
             </ul>
           </div>
-          </section>
+          </section> -->
 
-          <!-- STUDIO MAIN.TEAM -->
+    <!-- STUDIO MAIN.TEAM -->
 
-      <section class="section section--team">
+    <!-- <section class="section section--team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
         <ul class="team">
@@ -344,11 +356,11 @@
           </li>
         </ul>
         </div>
-        </section>
+        </section> -->
 
-<!-- STUDIO MAIN.CUSTOMERS -->
+    <!-- STUDIO MAIN.CUSTOMERS -->
 
-        <section class="section">
+    <!-- <section class="section">
           <div class="container">
             <h2 class="section-title">Постійні клієнти</h2>
             <ul class="customers">
@@ -403,16 +415,16 @@
             </ul>
           </div>
         </section>
-    </main>
+    </main> -->
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
-    <footer class="footer">
-      <div class="container container--footer">
+    <!-- <footer class="footer">
+      <div class="container container--footer"> -->
 
-<!-- FOOTER.CONTACTS -->
+    <!-- FOOTER.CONTACTS -->
 
-      <div>
+    <!-- <div>
         <a href="./index.html" class="logo logo--footer"><span class="logo__accent">Web</span>Studio</a>
         <address>
           <ul class="footer-contacts">
@@ -434,11 +446,11 @@
             </li>
           </ul>
         </address>
-      </div>
+      </div> -->
 
-        <!-- FOOTER.JOIN US -->
+    <!-- FOOTER.JOIN US -->
 
-      <div class="join-us">
+    <!-- <div class="join-us">
         <p class="footer-title">приєднуйтесь</p>
         <ul class="social-media"> 
           <li class='social-media__item'>
@@ -478,11 +490,11 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
-<!-- FOOTER.FORM -->
+    <!-- FOOTER.FORM -->
 
-        <div class="subscribe" >        
+    <!-- <div class="subscribe" >        
         <p class="footer-title" for="email">підпишіться на розсилку</p>
           <form  class="footer__form"> 
             <input class="footer__input" type="email" name="email" placeholder="E-mail" id="email">
@@ -494,10 +506,10 @@
           </form>
         </div>
       </div>
-      </footer>
+      </footer> -->
 
-<!-- MODAL -->
-      <div class="backdrop is-hidden" data-modal>
+    <!-- MODAL -->
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal__close-button" data-modal-close>
             <svg class="modal__close-icon">
@@ -547,6 +559,6 @@
       </div>
   
 
-      <script src="./js/modal.js"></script>
+      <script src="./js/modal.js"></script> -->
   </body>
-  </html>
+</html>
