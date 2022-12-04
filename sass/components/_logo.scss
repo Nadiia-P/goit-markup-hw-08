@@ -1,22 +1,30 @@
 .logo {
-  display: block;
   font-family: var(--ff-logo), sans-serif;
   font-size: var(--fs-logo-main);
   font-weight: var(--fw-title);
-
-  &__accent {
-    color: var(--accent-clr-blue);
+  line-height: 1.17;
+  @media screen and (min-width: 768px) {
+    position: static;
+    display: block;
   }
-
-  &--header {
-    color: var(--txt-clr-title);
-  }
-
-  &--footer {
-    color: var(--txt-clr-white);
-  }
-
   @media screen and (min-width: 1200px) {
-    font-size: var(--fs-logo-pc);
+    font-size: var(--fs-logo-1200px);
   }
+}
+
+.logo__accent {
+  color: var(--accent-clr-blue);
+}
+
+.logo--header {
+  color: var(--txt-clr-title);
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+  }
+}
+
+.logo--footer {
+  color: var(--txt-clr-white);
 }

@@ -10,5 +10,8 @@
     background-color: var(--accent-clr-blue);
     position: relative;
     top: 47px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }

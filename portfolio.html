@@ -29,7 +29,7 @@
         <a href="./index.html" class="logo logo--header"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <div class="mobile-menu">
+        <div class="header-menu" id="mobile-menu" data-menu>
           <nav class="header-nav">
             <ul class="header-nav">
               <li>
@@ -45,8 +45,11 @@
           </nav>
           <ul class="header-contacts">
             <li>
-              <a class="header-contacts__link" href="mailto:info@devstudio.com">
-                <svg class="header-contacts__icon" width="16" height="12">
+              <a
+                class="header-contacts__link header-contacts__link--mail"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="header-contacts__icon header-contacts__icon--envelope">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
@@ -54,23 +57,41 @@
             </li>
             <li>
               <a class="header-contacts__link" href="tel:+380961111111">
-                <svg class="header-contacts__icon" width="10" height="16">
+                <svg class="header-contacts__icon header-contacts__icon--phone">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 +380 96 111 11 11</a
               >
             </li>
           </ul>
-          <ul class="header-social-media">
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>linkedin</li>
+          <ul class="header-socials">
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">Twitter</a>
+            </li>
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">Instagram</a>
+            </li>
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">Facebook</a>
+            </li>
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">linkedin</a>
+            </li>
           </ul>
-          <button class="mobile-menu__button">
-            <div class="mobile-menu__bar"></div>
-          </button>
         </div>
+        <button
+          class="header-menu__button"
+          data-menu-button
+          aria-label="Перемикач мобільного меню"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg class="menu-icon" width="40px" height="40px">
+            <!-- <div class="burger"></div> -->
+            <use class="menu-icon__burger" href="./images/icons.svg#icon-burger"></use>
+            <use class="menu-icon__cross" href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -403,5 +424,13 @@
         </div>
       </div>
     </footer>
+    <!-- SCRIPTS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
