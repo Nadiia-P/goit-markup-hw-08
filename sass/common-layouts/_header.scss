@@ -1,46 +1,51 @@
 .header {
-  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-clr);
+
   @media screen and (min-width: 768px) {
-    position: static;
     padding: 21px 0;
-    border-bottom: 1px solid var(--border-clr);
   }
 
   @media screen and (min-width: 1200px) {
     padding: 24px 0;
-    border-bottom: 1px solid var(--border-clr);
   }
 }
 
 .header-menu {
   position: absolute;
+  // z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  // justify-content: center;
   padding: 48px 40px;
-  transform: translateX(100vw);
   background-color: var(--clr-white);
+  opacity: 0;
+  pointer-events: visible;
+  z-index: -1;
+
+  &.is-open {
+    opacity: 1;
+    z-index: 1;
+  }
+
   @media screen and (min-width: 768px) {
+    z-index: 1;
     position: static;
+    height: auto;
+    padding: 0;
     flex-direction: row;
     flex: 1;
     margin-left: 87px;
-    padding: 0;
-    height: auto;
-    justify-content: space-between;
     align-items: center;
-    transform: translateX(0);
+    opacity: 1;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
-}
-
-.header-menu.is-open {
-  transform: translateX(0);
 }
 
 .header-nav {
@@ -78,16 +83,17 @@
   @include flex(flex-start, flex-start);
   gap: 32px;
   flex-direction: column-reverse;
+
   @media screen and (min-width: 768px) {
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
     @include flex(flex-start, center);
     flex-direction: row;
     gap: 30px;
-    margin-left: auto;
   }
 }
 

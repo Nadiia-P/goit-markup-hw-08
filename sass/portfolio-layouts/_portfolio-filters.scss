@@ -1,7 +1,14 @@
 .filters {
-  @include flex();
+  @include flex(start);
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   &__button {
     font-weight: var(--fw-filter-button);
@@ -10,6 +17,7 @@
     padding-inline: 22px;
     height: 38px;
     min-width: fit-content;
+    box-shadow: unset;
     transition: background-color var(--trans-func), color var(--trans-func),
       box-shadow var(--trans-func);
   }

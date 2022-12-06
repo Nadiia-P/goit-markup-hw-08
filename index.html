@@ -99,14 +99,14 @@
     <!-- <main> -->
 
     <!-- STUDIO MAIN.HERO -->
-    <!-- <section class="section section--hero">
-        <div class="container">
-          <h1 class="hero__title">ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button" data-modal-open>Замовити послугу</button>
-        </div>
-      </section> -->
+    <section class="section section--hero hero">
+      <div class="container">
+        <h1 class="hero__title">ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="button" data-modal-open>Замовити послугу</button>
+      </div>
+    </section>
     <!-- STUDIO MAIN.FEATURES -->
-    <!-- <section class="section section--features">
+    <section class="section section--features">
         <div class="container"><h2 class="visually-hidden">наші переваги</h2>
           <ul class="features">
             <li class="features__item">
@@ -158,11 +158,11 @@
               </p>
             </li>
           </ul>
-        </section> -->
+        </section>
 
     <!-- STUDIO MAIN.SERVICES -->
 
-    <!-- <section class="section">
+        <section class="section section--services ">
           <div class="container"> <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="services">
               <li class="services__item">
@@ -179,16 +179,38 @@
               </li>
             </ul>
           </div>
-          </section> -->
+        </section>
 
     <!-- STUDIO MAIN.TEAM -->
 
-    <!-- <section class="section section--team">
+    <section class="section section--team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
         <ul class="team">
           <li class="team__card">
-            <img src="images/team-member-1.jpg" alt="Photo of Ihor, product designer." width="270" />
+            <picture>
+              <source 
+                srcset="
+                ./images/desktop/team/team1-desktop.jpg 1x, 
+                ./images/desktop/team/team1-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                ./images/tablet/team/team1-tablet.jpg 1x, 
+                ./images/tablet/team/team1-tablet@2x.jpg 2x" 
+                media="(min-width:768px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                 ./images/mobile/team/team1-mobile.jpg 1x, 
+                 ./images/mobile/team/team1-mobile@2x.jpg 2x" 
+                  media="(max-width:767px)"
+                  type="image/jpeg">
+              <img class="team__img" src="./images/mobile/team/team1-mobile.jpg" alt="Photo of Ihor, product designer." />
+            </picture>    
+            <!-- мое изображение -->
+            <!-- <img src="images/team-member-1.jpg"  width="270" /> -->
             <div class="team__member">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__job">Product Designer</p>
@@ -233,11 +255,27 @@
             </div>
           </li>
           <li class="team__card">
-            <img
-              src="images/team-member-2.jpg"
-              alt="photo of Olha, frontend developer"
-              width="270"
-            />
+            <picture>
+              <source 
+                srcset="
+                ./images/desktop/team/team2-desktop.jpg 1x, 
+                ./images/desktop/team/team2-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                ./images/tablet/team/team2-tablet.jpg 1x, 
+                ./images/tablet/team/team2-tablet@2x.jpg 2x" 
+                media="(min-width:768px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                 ./images/mobile/team/team2-mobile.jpg 1x, 
+                 ./images/mobile/team/team2-mobile@2x.jpg 2x" 
+                  media="(max-width:767px)"
+                  type="image/jpeg">
+              <img class="team__img" src="./images/mobile/team/team2-mobile.jpg" alt="photo of Olha, frontend developer" />
+            </picture>
             <div class="team__member">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__job">Frontend Developer</p>
@@ -282,12 +320,28 @@
             </div>
           </li>
           <li class="team__card">
-            <img
-              src="images/team-member-3.jpg"
-              alt="photo of Mykola, Marketing specialist"
-              width="270"
-            />
-            <div class="team__member">
+            <picture>
+              <source 
+                srcset="
+                ./images/desktop/team/team3-desktop.jpg 1x, 
+                ./images/desktop/team/team3-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                ./images/tablet/team/team3-tablet.jpg 1x, 
+                ./images/tablet/team/team3-tablet@2x.jpg 2x" 
+                media="(min-width:768px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                 ./images/mobile/team/team3-mobile.jpg 1x, 
+                 ./images/mobile/team/team3-mobile@2x.jpg 2x" 
+                  media="(max-width:767px)"
+                  type="image/jpeg">
+              <img class="team__img" src="./images/mobile/team/team3-mobile.jpg" alt="photo of Mykola, Marketing specialist" />
+            </picture>
+              <div class="team__member">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__job">Marketing</p>
               <ul class="social-media"> 
@@ -331,7 +385,27 @@
             </div>
           </li>
           <li class="team__card">
-            <img src="images/team-member-4.jpg" alt="photo of Mykhailo, UI Designer" width="270" />
+            <picture>
+              <source 
+                srcset="
+                ./images/desktop/team/team4-desktop.jpg 1x, 
+                ./images/desktop/team/team4-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                ./images/tablet/team/team4-tablet.jpg 1x, 
+                ./images/tablet/team/team4-tablet@2x.jpg 2x" 
+                media="(min-width:768px)"
+                type="image/jpeg">
+              <source 
+                srcset="
+                 ./images/mobile/team/team4-mobile.jpg 1x, 
+                 ./images/mobile/team/team4-mobile@2x.jpg 2x" 
+                  media="(max-width:767px)"
+                  type="image/jpeg">
+              <img class="team__img" src="./images/mobile/team/team4-mobile.jpg" alt="photo of Mykhailo, UI Designer" />
+            </picture>
             <div class="team__member">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__job">UI Designer</p>
@@ -377,16 +451,16 @@
           </li>
         </ul>
         </div>
-        </section> -->
+        </section>
 
     <!-- STUDIO MAIN.CUSTOMERS -->
 
-    <!-- <section class="section">
+    <section class="section">
           <div class="container">
             <h2 class="section-title">Постійні клієнти</h2>
             <ul class="customers">
               <li class="customers__item">
-                <a class="customers__link" href="" target="_blank"
+                <a class="customers__pic" href="" target="_blank"
                 rel="noopener nofollow  noreferrer">
                   <svg width="106" height="60">
                    <use href="./images/icons.svg#icon-customer-1"></use>
@@ -394,7 +468,7 @@
                 </a>
               </li>
               <li class="customers__item">
-                <a class="customers__link" href="" target="_blank"
+                <a class="customers__pic" href="" target="_blank"
                 rel="noopener nofollow  noreferrer">
                   <svg width="106" height="60">
                    <use href="./images/icons.svg#icon-customer-2"></use>
@@ -402,7 +476,7 @@
                 </a>
               </li>
               <li class="customers__item">
-                <a class="customers__link" href="" target="_blank"
+                <a class="customers__pic" href="" target="_blank"
                 rel="noopener nofollow  noreferrer">
                   <svg width="106" height="60">
                    <use href="./images/icons.svg#icon-customer-3"></use>
@@ -410,7 +484,7 @@
                 </a>
               </li>
               <li class="customers__item">
-                <a class="customers__link" href="" target="_blank"
+                <a class="customers__pic" href="" target="_blank"
                 rel="noopener nofollow  noreferrer">
                   <svg width="106" height="60">
                    <use href="./images/icons.svg#icon-customer-4"></use>
@@ -418,7 +492,7 @@
                 </a>
               </li>
               <li class="customers__item">
-                <a class="customers__link" href="" target="_blank"
+                <a class="customers__pic" href="" target="_blank"
                 rel="noopener nofollow  noreferrer">
                   <svg width="106" height="60">
                    <use href="./images/icons.svg#icon-customer-5"></use>
@@ -426,7 +500,7 @@
                 </a>
               </li>
               <li class="customers__item">
-                <a class="customers__link" href="" target="_blank"
+                <a class="customers__pic" href="" target="_blank"
                 rel="noopener nofollow  noreferrer">
                   <svg width="106" height="60">
                    <use href="./images/icons.svg#icon-customer-6"></use>
@@ -436,86 +510,86 @@
             </ul>
           </div>
         </section>
-    </main> -->
+    </main>
 
     <!-- FOOTER -->
 
-    <!-- <footer class="footer">
-      <div class="container container--footer"> -->
+    <footer class="footer">
+      <div class="container container--footer">
 
     <!-- FOOTER.CONTACTS -->
-
-    <!-- <div>
-        <a href="./index.html" class="logo logo--footer"><span class="logo__accent">Web</span>Studio</a>
-        <address>
-          <ul class="footer-contacts">
-            <li class="footer-contacts__item">
-              <a
+      <div class="all-contacts-block">
+        <div>
+          <a href="./index.html" class="logo logo--footer"><span class="logo__accent">Web</span>Studio</a>
+            <address>
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
+                <a
                 class="footer-contacts__link  footer-contacts__link--address"
                 href="https://goo.gl/maps/ifu1UcrwGc2GNokw5"
                 target="_blank"
                 rel="noopener nofollow  noreferrer"
-              >
+                >
                 м. Київ, пр-т Лесі Українки, 26
-              </a>
-            </li>
-            <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="footer-contacts__item footer-contacts__item--last">
-              <a class="footer-contacts__link" href="tel:+380961111111">+380 96 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div> -->
+                </a>
+              </li>
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer-contacts__item footer-contacts__item--last">
+                <a class="footer-contacts__link" href="tel:+380961111111">+380 96 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
 
     <!-- FOOTER.JOIN US -->
 
-    <!-- <div class="join-us">
-        <p class="footer-title">приєднуйтесь</p>
-        <ul class="social-media"> 
-          <li class='social-media__item'>
-            <a class='social-media__link social-media__link--footer' target="_blank"
-            rel="noopener nofollow  noreferrer"href="https://www.instagram.com">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li class='social-media__item'>
-            <a class='social-media__link social-media__link--footer' target="_blank"
-            rel="noopener nofollow  noreferrer"href="https://www.twitter.com">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li class='social-media__item'>
-            <a class='social-media__link social-media__link--footer' target="_blank"
-            rel="noopener nofollow  noreferrer"href="https://www.facebook.com">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li class='social-media__item'>
-            <a class='social-media__link social-media__link--footer' target="_blank"
-            rel="noopener nofollow  noreferrer"href="https://www.linkedin.com">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin">
-                </use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div> -->
-
+        <div class="join-us">
+          <p class="footer-title">приєднуйтесь</p>
+          <ul class="social-media"> 
+            <li class='social-media__item'>
+              <a class='social-media__link social-media__link--footer' target="_blank"
+              rel="noopener nofollow  noreferrer"href="https://www.instagram.com">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class='social-media__item'>
+              <a class='social-media__link social-media__link--footer' target="_blank"
+              rel="noopener nofollow  noreferrer"href="https://www.twitter.com">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class='social-media__item'>
+              <a class='social-media__link social-media__link--footer' target="_blank"
+              rel="noopener nofollow  noreferrer"href="https://www.facebook.com">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class='social-media__item'>
+              <a class='social-media__link social-media__link--footer' target="_blank"
+                rel="noopener nofollow  noreferrer"href="https://www.linkedin.com">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     <!-- FOOTER.FORM -->
 
-    <!-- <div class="subscribe" >        
+    <div class="subscribe" >        
         <p class="footer-title" for="email">підпишіться на розсилку</p>
           <form  class="footer__form"> 
             <input class="footer__input" type="email" name="email" placeholder="E-mail" id="email">
@@ -527,10 +601,10 @@
           </form>
         </div>
       </div>
-      </footer> -->
+      </footer>
 
     <!-- MODAL -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal__close-button" data-modal-close>
             <svg class="modal__close-icon">
@@ -577,7 +651,7 @@
             <button class='button' type="submit">Відправити</button>
           </form>
         </div>
-      </div> -->
+      </div>
 
     <!-- SCRIPTS  -->
 

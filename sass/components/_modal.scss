@@ -1,9 +1,17 @@
 .modal {
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
+  max-width: 528px;
+  min-width: 280px;
+  min-height: 581px;
   padding: 40px;
   border-radius: 4px;
-  @include сentering-xy();
+  margin: 15px auto;
+  position: relative;
+  // z-index: 2;
+
+  @media (min-width: 768px) and (min-height: 611px) {
+    @include сentering-xy();
+  }
 
   background-color: var(--clr-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

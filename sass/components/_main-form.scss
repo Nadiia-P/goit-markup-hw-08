@@ -97,8 +97,8 @@
     outline: unset;
     appearance: none;
     cursor: pointer;
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     border: 2px Solid #212121;
     border-radius: 2px;
 
@@ -127,6 +127,9 @@
 
     line-height: 1.71;
     user-select: none;
+    @media (max-width: 543px) {
+      font-size: var(--fs-small);
+    }
   }
 
   &__link {
